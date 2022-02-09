@@ -263,11 +263,11 @@ li:last-child {
   border-color: var(--pink);
 }
 
-.social-icon:hover .fab {
+.social-icon:hover .fa-brands {
   color: var(--pink);
 }
 
-.fab {
+.fa-brands {
   line-height: 3rem;
 }
 
@@ -283,4 +283,140 @@ li:last-child {
 }
 .attribution a {
   color: var(--white);
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1440px) {
+  body {
+    text-align: left;
+  }
+  .header {
+    background-image: url("../images/bg-hero-desktop.svg");
+    background-size: 100% 718px;
+    padding-top: 4.75rem;
+    padding-bottom: 7rem;
+  }
+
+  .header-logo {
+    width: 20rem;
+    height: 3rem;
+  }
+
+  .try-button {
+    font-size: 1.35rem;
+    padding: 1.35rem 6.5rem;
+    border-radius: 50px;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin-top: 6.5rem;
+  }
+
+  .hero .illustration {
+    width: 69.5rem;
+    padding: 0;
+  }
+
+  .main-heading {
+    font-size: 4rem;
+    padding: 0;
+    margin-top: 9.75rem;
+    margin-bottom: 2.75rem;
+    letter-spacing: -0.005em;
+    width: 44rem;
+  }
+
+  .hero .paragraph {
+    padding: 0;
+    margin-bottom: 3.3rem;
+    font-size: 1.8rem;
+    width: 51rem;
+  }
+
+  .get-started-button {
+    padding: 1.7rem 7rem;
+    border-radius: 100px;
+    font-size: 1.4rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 5rem 2.5rem 6rem 12rem;
+  }
+
+  .card:nth-of-type(1) {
+    margin-top: 16rem;
+    padding-bottom: 5rem;
+  }
+
+  .card:nth-of-type(2) {
+    flex-direction: row;
+  }
+
+  .card .illustration {
+    width: 40.5rem;
+  }
+
+  .card-heading {
+    font-size: 2.8rem;
+    margin-top: 10rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .card .paragraph {
+    font-size: 1.8rem;
+    padding-right: 19rem;
+  }
+
+  .card:nth-of-type(2) {
+    padding-bottom: 9rem;
+  }
+
+  .card:nth-of-type(2) .text-content {
+    padding-left: 18rem;
+  }
+
+  .card:nth-of-type(2) .card-heading {
+    margin-top: 10.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .card:nth-of-type(2) .paragraph {
+    padding-right: 0;
+  }
+
+  .card:nth-of-type(3) {
+    padding-bottom: 8rem;
+  }
+
+  .card:nth-of-type(3) .card-heading {
+    margin-top: 10.75rem;
+  }
+
+  .card:nth-of-type(3) .paragraph {
+    padding-right: 19.5rem;
+    padding-left: 0;
+  }
+
+  .call-to-action {
+    margin: 7.5rem auto 0;
+    padding: 6.5rem 12.5rem 5rem;
+    top: 8.5rem;
+    text-align: center;
+  }
+
+  .call-to-action .card-heading {
+    margin-top: 0;
+    font-size: 3.2rem;
+    margin-bottom: 3.75rem;
+  }
+
+  .call-to-action .get-started-button {
+    padding: 2.4rem 10rem;
+    font-size: 2rem;
+  }
 }
