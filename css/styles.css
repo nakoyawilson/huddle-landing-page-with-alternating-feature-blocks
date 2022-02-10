@@ -166,7 +166,7 @@ svg {
   background-color: var(--white);
   width: min(94.6666%, 80rem);
   margin: 5.25rem auto 0;
-  border-radius: 20px;
+  border-radius: 12px;
   box-shadow: var(--shadow);
   padding: 5rem 2.5rem 4rem;
   position: relative;
@@ -209,12 +209,12 @@ svg {
 }
 
 .contact-grid div:nth-of-type(1) {
-  align-self: flex-start;
+  align-self: start;
 }
 
 .location-icon {
   position: relative;
-  top: 0.4rem;
+  top: 1rem;
 }
 
 .footer-links {
@@ -291,6 +291,9 @@ li:last-child {
   body {
     text-align: left;
   }
+
+  /* Header Section */
+
   .header {
     background-image: url("../images/bg-hero-desktop.svg");
     background-size: 100% 718px;
@@ -319,6 +322,8 @@ li:last-child {
     width: 69.5rem;
     padding: 0;
   }
+
+  /* Main Section */
 
   .main-heading {
     font-size: 4rem;
@@ -403,9 +408,9 @@ li:last-child {
   }
 
   .call-to-action {
-    margin: 7.5rem auto 0;
+    margin: 6.5rem auto 0;
     padding: 6.5rem 12.5rem 5rem;
-    top: 8.5rem;
+    top: 9.5rem;
     text-align: center;
   }
 
@@ -418,5 +423,63 @@ li:last-child {
   .call-to-action .get-started-button {
     padding: 2.4rem 10rem;
     font-size: 2rem;
+  }
+
+  /* Footer Section */
+
+  .footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: start;
+    padding-top: 19rem;
+  }
+
+  .logo {
+    transform: none;
+    margin-bottom: 4rem;
+    grid-column: span 3;
+    margin-left: 4rem;
+  }
+
+  .location {
+    width: 32.5rem;
+  }
+
+  .contact-grid {
+    row-gap: 2.5rem;
+    font-size: 1.6rem;
+    align-items: start;
+    margin-left: 4rem;
+  }
+
+  .footer-links {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 15rem;
+  }
+
+  li {
+    margin-bottom: 1.6rem;
+    margin-left: 0.5rem;
+  }
+
+  .social-icons {
+    margin: 0.25rem 0 0 4rem;
+    justify-content: left;
+  }
+
+  .copyright,
+  .attribution {
+    grid-column: span 3;
+  }
+
+  .copyright {
+    margin-bottom: 0;
+    margin-top: 4rem;
+    margin-right: 0.75rem;
+    text-align: right;
+    font-size: 1.2rem;
   }
 }
