@@ -214,7 +214,7 @@ svg {
 
 .location-icon {
   position: relative;
-  top: 1rem;
+  top: 0.75rem;
 }
 
 .footer-links {
@@ -285,6 +285,10 @@ li:last-child {
   color: var(--white);
 }
 
+.attribution a:hover {
+  color: var(--pink);
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 1440px) {
@@ -350,20 +354,36 @@ li:last-child {
   .card {
     display: flex;
     flex-direction: row-reverse;
-    padding: 5rem 2.5rem 6rem 12rem;
   }
 
   .card:nth-of-type(1) {
-    margin-top: 16rem;
-    padding-bottom: 5rem;
+    margin-top: 15.75rem;
+    padding: 5.25rem 3.5rem 5rem 12rem;
   }
 
   .card:nth-of-type(2) {
+    padding: 7.6rem 3rem 7rem 12.25rem;
     flex-direction: row;
   }
 
+  .card:nth-of-type(3) {
+    padding: 6.3rem 2.75rem 6rem 12.2rem;
+  }
+
   .card .illustration {
+    padding: 0;
+  }
+
+  .card:nth-of-type(1) .illustration {
     width: 40.5rem;
+  }
+
+  .card:nth-of-type(2) .illustration {
+    width: 41.5rem;
+  }
+
+  .card:nth-of-type(3) .illustration {
+    width: 42rem;
   }
 
   .card-heading {
@@ -377,38 +397,30 @@ li:last-child {
     padding-right: 19rem;
   }
 
-  .card:nth-of-type(2) {
-    padding-bottom: 9rem;
-  }
-
   .card:nth-of-type(2) .text-content {
-    padding-left: 18rem;
+    padding-left: 16.75rem;
   }
 
   .card:nth-of-type(2) .card-heading {
-    margin-top: 10.5rem;
-    margin-bottom: 1rem;
+    margin-top: 8.25rem;
+    margin-bottom: 1.25rem;
   }
 
   .card:nth-of-type(2) .paragraph {
     padding-right: 0;
   }
 
-  .card:nth-of-type(3) {
-    padding-bottom: 8rem;
-  }
-
   .card:nth-of-type(3) .card-heading {
-    margin-top: 10.75rem;
+    margin-top: 9.5rem;
   }
 
   .card:nth-of-type(3) .paragraph {
-    padding-right: 19.5rem;
+    padding-right: 18rem;
     padding-left: 0;
   }
 
   .call-to-action {
-    margin: 6.5rem auto 0;
+    margin: 6.75rem auto 0;
     padding: 6.5rem 12.5rem 5rem;
     top: 9.5rem;
     text-align: center;
@@ -429,9 +441,9 @@ li:last-child {
 
   .footer .container {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     align-items: start;
-    padding-top: 19rem;
+    padding-top: 19.2rem;
   }
 
   .logo {
@@ -446,14 +458,21 @@ li:last-child {
   }
 
   .contact-grid {
-    row-gap: 2.5rem;
+    row-gap: 2.4rem;
     font-size: 1.6rem;
     align-items: start;
     margin-left: 4rem;
   }
 
+  .contact-icon {
+    position: relative;
+    top: 0.4rem;
+    left: 0.25rem;
+  }
+
   .footer-links {
     margin-top: 0;
+    margin-left: 11.75rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -463,11 +482,13 @@ li:last-child {
   li {
     margin-bottom: 1.6rem;
     margin-left: 0.5rem;
+    margin-right: 11.5rem;
   }
 
   .social-icons {
-    margin: 0.25rem 0 0 4rem;
-    justify-content: left;
+    margin: 0;
+    margin-left: 2.75rem;
+    justify-content: center;
   }
 
   .copyright,
@@ -476,7 +497,7 @@ li:last-child {
   }
 
   .copyright {
-    margin-bottom: 0;
+    margin-bottom: 4.75rem;
     margin-top: 4rem;
     margin-right: 0.75rem;
     text-align: right;
