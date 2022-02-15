@@ -453,7 +453,7 @@ li:last-child {
   }
 
   .logo {
-    transform: scale(1) translateX(-5.75rem);
+    transform: none;
     margin-bottom: 4rem;
     grid-column: span 3;
     margin-left: 4rem;
